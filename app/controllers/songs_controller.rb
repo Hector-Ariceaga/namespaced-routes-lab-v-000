@@ -1,5 +1,5 @@
 class SongsController < ApplicationController
-  before_action :set_preferences, only: [:index, :show]
+  before_action :set_preferences, only: [:index, :new]
 
   def index
     if params[:artist_id]
