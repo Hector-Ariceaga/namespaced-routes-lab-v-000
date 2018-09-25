@@ -8,12 +8,7 @@ class ArtistsController < ApplicationController
   end
 
   def new
-    binding.pry
-    if p.allow_create_artists == false
-      redirect_to
-    else
     @artist = Artist.new
-  end
   end
 
   def create
